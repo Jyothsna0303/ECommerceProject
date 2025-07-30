@@ -1,0 +1,96 @@
+this is about maven and git execution 
+automated test cases done via eclipse is local execution within QA , once wrking fine 
+make sure those test cases are executing remotely in CI environment , for that maven is used (Build tool)
+later on jenkins 
+we should be able to run our test cases through this POM.XML 
+we can run the testing.xml file in POM.xml file by adding @1-dependencies (jar files req for project )
+pom.xml is for adding dependencies only '
+we can add @2-pluggins (compile and run the project)in POM.XML 2 kinds for outside of eclipse 
+	Maven complier plugin- complie and running code 
+	Maven SUREFIRE plugin - running our project 
+	
+From pom .xml give the suite name and run as Maven test 
+build success 
+dev team responsible 
+Maven is a integrated software code is converted into package = build# dev
+once our execution is done it will show build success 
+
+install maven 
+mvn -version we need to run in cmd after configuring the path of downloaded mvn version in environmental variables 
+mvn cd path of project then give dir - will give location of files and xmls in project
+then- ,mvn test to automatically run the pom.xml 
+build success
+
+2 commands - cd path , mvn test in cmd manually 
+create one bat file to automatically skip the above steps 
+go to project location in FM and create one .bat extension file as run.bat then open in notepad 
+put cd C:\Users\abdul\eclipse-workspace\ECommerceProject 
+			mvn test 
+			
+			inside run.bat file save and close 
+			with single click in bat file everything will be done automatically '
+			
+we have to give the type of xml file we want to execute in pom.xml in suitexmfile  , we can also give multiple xml sure
+ 
+ 
+ pom.xml > testng.xml > test cases > page object classes > utility files > test data > config files 
+ 
+  pom.xml can run in eclipse , cmd , jenkins - ci tool
+  
+  QA  
+  -----
+  once devops is automated parallely qa will do same thing 
+  end of day commit code from local repository to remote repository push 
+  
+  
+  
+                                       DEVOPS  
+                                       --------   
+                                       after 5pm code push from dev team 
+                                       Devops is responsible for 
+                                       	Build creation
+                                       	run automation 
+                                       	build certification        Maven 
+                                       								complie code 
+                                       								run executing
+                                       								test code  
+                                       								package 
+                                       								install
+                                       				process automation 
+                                       								
+                                       
+                                       
+                                       
+                                                                    DEV
+                                                                    ---- 1st starts here  own workspace own code 
+                                                                    own local repository (version ctrl system - all files maintaing here )
+                                                                    git as local software / repository
+                                                                    create using git software
+                                                                    end of day comit their code into repository
+                                                                    changes , modifications , updations should be part of their local repositoryies
+                                                                    and later they have to push in github repository
+                                                                    We can access through url - github /website(remote repository)- coomon along team 
+                                                                    committing entire code in local repositoryies later theysend to remote repositoryies
+                                                                    here we use push (sharing files from local to remote )
+                                                                    everyday task cut offf time - 5pm
+                                                                    
+                                                                    
+                                                                    
+Devops team will take dev  team repository and create build and 2,run automation by taking our testing code  frrom github repository 
+once its executed they will generate certificate happens through ni8 
+mrng will be certified by devops and we will continue further testing 
+continuous - nightly builds 
+
+execution of sanity will be done at ni8 by devops team 
+
+
+QA responsible for whatever changes are made in  wrkspace should be part of local repository(commit ) from there push into remote repository git hub - jenkins pulled inside 
+
+
+jenkins will recieve latest code everyday from github repository 
+
+  
+                                               
+                                                                   
+	
+

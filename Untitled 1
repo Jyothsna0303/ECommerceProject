@@ -1,0 +1,14 @@
+this is about maven and git execution 
+automated test cases done via eclipse is local execution within QA , once wrking fine 
+make sure those test cases are executing remotely in CI environment , for that maven is used (Build tool)
+later on jenkins 
+we should be able to run our test cases through this POM.XML 
+we can run the testing.xml file in POM.xml file by adding @1-dependencies (jar files req for project )
+pom.xml is for adding dependencies only '
+we can add @2-pluggins (compile and run the project)in POM.XML 2 kinds for outside of eclipse 
+	Maven complier plugin- complie and running code 
+	Maven SUREFIRE plugin - running our project 
+	
+	
+	
+
